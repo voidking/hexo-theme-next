@@ -177,13 +177,15 @@ site_state: true
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
+# Find more icon: https://fontawesome.com/
 social:
   E-Mail: mailto:voidking@qq.com || envelope
   GitHub: https://github.com/voidking || github
   Weibo: http://weibo.com/voidking  || weibo
-  Twitter: https://twitter.com/voidking_com || twitter
+  Zhihu: https://www.zhihu.com/people/voidking || zhihu
+  #bilibili: https://space.bilibili.com/473196777 || tv-retro
+  #Twitter: https://twitter.com/voidking_com || twitter
   #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
