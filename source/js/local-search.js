@@ -12,7 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
   } else if (/json$/i.test(searchPath)) {
     isXml = false;
   }
-  const path = CONFIG.root + searchPath;
+  // const path = CONFIG.root + searchPath;
+  const jsdelivr = 'https://cdn.jsdelivr.net/gh/'
+  const userRepo = 'voidking/voidking.github.io/'
+  const path = jsdelivr + userRepo + searchPath;
   const input = document.getElementById('search-input');
   const resultContent = document.getElementById('search-result');
 
