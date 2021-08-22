@@ -12,10 +12,12 @@ window.addEventListener('DOMContentLoaded', () => {
   } else if (/json$/i.test(searchPath)) {
     isXml = false;
   }
-  // const path = CONFIG.root + searchPath;
-  const jsdelivr = 'https://cdn.jsdelivr.net/gh/'
-  const userRepo = 'voidking/voidking.github.io/'
-  const path = jsdelivr + userRepo + searchPath;
+  let path = CONFIG.root + searchPath;
+  // Use jsDelivr CDN to accelerate the speed of loading search.xml
+  if (CONFIG.localsearch.cdn.enable === true && CONFIG.localsearch.cdn.url !== null){
+    path = CONFIG.localsearch.cdn.url;
+  }
+
   const input = document.getElementById('search-input');
   const resultContent = document.getElementById('search-result');
 
