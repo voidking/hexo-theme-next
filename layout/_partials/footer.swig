@@ -14,6 +14,11 @@
   </script>
 {%- endif %}
 
+{%- if theme.google_adsense.enable %}
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ theme.google_adsense.client }}"
+     crossorigin="anonymous"></script>
+{%- endif %}
+
 <div class="copyright">
   {% set copyright_year = date(null, 'YYYY') %}
   &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }} – {% endif %}

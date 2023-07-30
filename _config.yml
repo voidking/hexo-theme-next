@@ -1064,5 +1064,8 @@ baidu_union:
   footer_code_id: "u6920911"
   footer_container_class: "_xduxciwe4ao"
 
+google_adsense:
+  enable: true
+  client: "ca-pub-3284447971731414"
 
 
