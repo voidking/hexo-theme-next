@@ -1,3 +1,19 @@
+<!-- 广告部分 -->
+<div class="{{ theme.baidu_union.footer_container_class }}"></div>
+{%- if theme.baidu_union.enable %}
+  <script type="text/javascript">
+      // 底部广告
+      (window.slotbydup = window.slotbydup || []).push({
+          id: "{{ theme.baidu_union.footer_code_id }}",
+          container: "{{ theme.baidu_union.footer_container_class }}",
+          async: true
+      });
+  </script>
+  <!-- 多条广告如下脚本只需引入一次 -->
+  <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/cm.js" async="async" defer="defer" >
+  </script>
+{%- endif %}
+
 <div class="copyright">
   {% set copyright_year = date(null, 'YYYY') %}
   &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }} – {% endif %}
