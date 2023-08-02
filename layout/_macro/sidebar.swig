@@ -32,10 +32,12 @@
       <!--/noindex-->
 
       <!-- sidebar advertisement-->
-      <div class="sidecar-ads" style="margin-top: 10px;">
-        <div class="{{ theme.baidu_union.sidebar_container_class }}"></div>
-      </div>
-
+      {%- if (is_post()) %}
+        <div class="sidecar-ads" style="margin-top: 10px;">
+          <div class="{{ theme.baidu_union.sidebar_container_class }}"></div>
+        </div>
+      {%- endif %}
+      
       <div class="site-overview-wrap sidebar-panel">
         {{ partial('_partials/sidebar/site-overview.swig', {}, {cache: theme.cache.enable}) }}
 
