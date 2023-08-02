@@ -1063,6 +1063,8 @@ baidu_union:
   enable: true
   footer_code_id: "u6920911"
   footer_container_class: "_xduxciwe4ao"
+  sidebar_code_id: "u6920919"
+  sidebar_container_class: "_053ydasmd31h"
 
 google_adsense:
   enable: true
