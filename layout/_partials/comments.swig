@@ -1,6 +1,14 @@
 <!-- footer advertisement-->
 <div class="footer-ads" style="margin-top: 10px;">
   <div class="{{ theme.baidu_union.footer_container_class }}"></div>
+  <div class="{{ theme.baidu_union.wap_footer_container_class }}"></div>
+    <script type="text/javascript">
+        (window.slotbydup = window.slotbydup || []).push({
+            id: "u6921432",
+            container: "_ft8kcphe7kl",
+            async: true
+        });
+    </script>
   {%- if theme.baidu_union.enable %}
     <script type="text/javascript">
         // 底部广告
@@ -13,6 +21,12 @@
         (window.slotbydup = window.slotbydup || []).push({
             id: "{{ theme.baidu_union.sidebar_code_id }}",
             container: "{{ theme.baidu_union.sidebar_container_class }}",
+            async: true
+        });
+        // WAP底部广告
+        (window.slotbydup = window.slotbydup || []).push({
+            id: "{{ theme.baidu_union.wap_footer_code_id }}",
+            container: "{{ theme.baidu_union.wap_footer_container_class }}",
             async: true
         });
     </script>

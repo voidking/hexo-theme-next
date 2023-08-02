@@ -1065,6 +1065,8 @@ baidu_union:
   footer_container_class: "_xduxciwe4ao"
   sidebar_code_id: "u6920919"
   sidebar_container_class: "_053ydasmd31h"
+  wap_footer_code_id: "u6921432"
+  wap_footer_container_class: "_ft8kcphe7kl"
 
 google_adsense:
   enable: true
