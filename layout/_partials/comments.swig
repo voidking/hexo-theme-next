@@ -1,7 +1,7 @@
 <!-- footer advertisement-->
 <div class="footer-ads" style="margin-top: 10px;">
   <div class="{{ theme.baidu_union.footer_container_class }}"></div>
-  <div class="{{ theme.baidu_union.wap_footer_container_class }}"></div>
+  <!-- <div class="{{ theme.baidu_union.wap_footer_container_class }}"></div> -->
     <script type="text/javascript">
         (window.slotbydup = window.slotbydup || []).push({
             id: "u6921432",
@@ -24,11 +24,11 @@
             async: true
         });
         // WAP底部广告
-        (window.slotbydup = window.slotbydup || []).push({
-            id: "{{ theme.baidu_union.wap_footer_code_id }}",
-            container: "{{ theme.baidu_union.wap_footer_container_class }}",
-            async: true
-        });
+        // (window.slotbydup = window.slotbydup || []).push({
+        //     id: "{{ theme.baidu_union.wap_footer_code_id }}",
+        //     container: "{{ theme.baidu_union.wap_footer_container_class }}",
+        //     async: true
+        // });
     </script>
     <!-- 多条广告如下脚本只需引入一次 -->
     <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/cm.js" async="async" defer="defer" >
