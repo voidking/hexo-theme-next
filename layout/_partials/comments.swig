@@ -1,3 +1,32 @@
+<!-- footer advertisement-->
+<div class="footer-ads" style="margin-top: 10px;">
+  <div class="{{ theme.baidu_union.footer_container_class }}"></div>
+  {%- if theme.baidu_union.enable %}
+    <script type="text/javascript">
+        // 底部广告
+        (window.slotbydup = window.slotbydup || []).push({
+            id: "{{ theme.baidu_union.footer_code_id }}",
+            container: "{{ theme.baidu_union.footer_container_class }}",
+            async: true
+        });
+        // 侧边栏广告
+        (window.slotbydup = window.slotbydup || []).push({
+            id: "{{ theme.baidu_union.sidebar_code_id }}",
+            container: "{{ theme.baidu_union.sidebar_container_class }}",
+            async: true
+        });
+    </script>
+    <!-- 多条广告如下脚本只需引入一次 -->
+    <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/cm.js" async="async" defer="defer" >
+    </script>
+  {%- endif %}
+
+  {%- if theme.google_adsense.enable %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ theme.google_adsense.client }}"
+       crossorigin="anonymous"></script>
+  {%- endif %}
+</div>
+
 {%- if page.comments %}
   {%- if theme.injects.comment.length == 1 %}
     {%- set inject_item = theme.injects.comment[0] %}
