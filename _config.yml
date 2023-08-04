@@ -1061,10 +1061,10 @@ images: images
 # Advertisements
 baidu_union:
   enable: true
-  footer_enable: true
+  footer_enable: false
   footer_code_id: "u6920911"
   footer_container_class: "_xduxciwe4ao"
-  sidebar_enable: false
+  sidebar_enable: true
   sidebar_code_id: "u6920919"
   sidebar_container_class: "_053ydasmd31h"
   wap_footer_enable: false
@@ -1074,9 +1074,9 @@ baidu_union:
 google_adsense:
   enable: true
   client: "ca-pub-3284447971731414"
-  footer_enable: false
+  footer_enable: true
   footer_ad_slot: "9697986181"
-  sidebar_enable: true
+  sidebar_enable: false
   sidebar_ad_slot: "2661998066"
 
 
