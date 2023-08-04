@@ -1,43 +1,49 @@
 <!-- footer advertisement-->
 <div class="footer-ads" style="margin-top: 10px;">
-  <div class="{{ theme.baidu_union.footer_container_class }}"></div>
-  <!-- <div class="{{ theme.baidu_union.wap_footer_container_class }}"></div> -->
-    <script type="text/javascript">
-        (window.slotbydup = window.slotbydup || []).push({
-            id: "u6921432",
-            container: "_ft8kcphe7kl",
-            async: true
-        });
-    </script>
   {%- if theme.baidu_union.enable %}
-    <script type="text/javascript">
-        // 底部广告
-        (window.slotbydup = window.slotbydup || []).push({
-            id: "{{ theme.baidu_union.footer_code_id }}",
-            container: "{{ theme.baidu_union.footer_container_class }}",
-            async: true
-        });
-        // 侧边栏广告
-        (window.slotbydup = window.slotbydup || []).push({
-            id: "{{ theme.baidu_union.sidebar_code_id }}",
-            container: "{{ theme.baidu_union.sidebar_container_class }}",
-            async: true
-        });
-        // WAP底部广告
-        // (window.slotbydup = window.slotbydup || []).push({
-        //     id: "{{ theme.baidu_union.wap_footer_code_id }}",
-        //     container: "{{ theme.baidu_union.wap_footer_container_class }}",
-        //     async: true
-        // });
-    </script>
+    {%- if theme.baidu_union.footer_enable %}
+    <div class="{{ theme.baidu_union.footer_container_class }}"></div>
+    {%- endif %}
+    {%- if theme.baidu_union.wap_footer_enable %}
+    <div class="{{ theme.baidu_union.wap_footer_container_class }}"></div>
+    {%- endif %}
     <!-- 多条广告如下脚本只需引入一次 -->
-    <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/cm.js" async="async" defer="defer" >
+    <script type="text/javascript" src="//cpro.baidustatic.com/cpro/ui/cm.js" async="async" defer="defer" ></script>
+    <script type="text/javascript">
+      // 底部广告
+      (window.slotbydup = window.slotbydup || []).push({
+          id: "{{ theme.baidu_union.footer_code_id }}",
+          container: "{{ theme.baidu_union.footer_container_class }}",
+          async: true
+      });
+      // 侧边栏广告
+      (window.slotbydup = window.slotbydup || []).push({
+          id: "{{ theme.baidu_union.sidebar_code_id }}",
+          container: "{{ theme.baidu_union.sidebar_container_class }}",
+          async: true
+      });
+      // WAP底部广告
+      (window.slotbydup = window.slotbydup || []).push({
+          id: "{{ theme.baidu_union.wap_footer_code_id }}",
+          container: "{{ theme.baidu_union.wap_footer_container_class }}",
+          async: true
+      });  
     </script>
   {%- endif %}
 
   {%- if theme.google_adsense.enable %}
+    {%- if theme.google_adsense.footer_enable %}
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="autorelaxed"
+         data-ad-client="{{ theme.google_adsense.client }}"
+         data-ad-slot="{{ theme.google_adsense.footer_ad_slot }}"></ins>
+    {%- endif %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ theme.google_adsense.client }}"
        crossorigin="anonymous"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   {%- endif %}
 </div>
 

@@ -34,8 +34,17 @@
       <!-- sidebar advertisement-->
       {%- if (is_post()) %}
         <div class="sidecar-ads" style="margin-top: 10px;">
+          {%- if theme.baidu_union.sidebar_enable %}
           <div class="{{ theme.baidu_union.sidebar_container_class }}"></div>
-        </div>
+          {%- endif %}
+          {%- if theme.google_adsense.sidebar_enable %}
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-format="autorelaxed"
+               data-ad-client="{{ theme.google_adsense.client }}"
+               data-ad-slot="{{ theme.google_adsense.sidebar_ad_slot }}"></ins>
+          </div>
+          {%- endif %}
       {%- endif %}
       
       <div class="site-overview-wrap sidebar-panel">
