@@ -14,6 +14,8 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       owner: '{{ theme.gitalk.github_id }}',
       admin: ['{{ theme.gitalk.admin_user }}'],
       id: '{{ gitalk_md5(page.path) }}',
+      title: '{{ page.title }}',
+      body: '欢迎留言，互相交流学习~',
       {%- if theme.gitalk.language == '' %}
         language: window.navigator.language || window.navigator.userLanguage,
       {% else %}
