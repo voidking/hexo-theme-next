@@ -782,7 +782,8 @@ local_search:
   cdn:
     enable: true
     # url: //cdn.jsdelivr.net/gh/<username>/<username>.github.io/search.xml
-    url: //cdn.jsdelivr.net/gh/voidking/voidking.github.io/search.xml
+    # url: //cdn.jsdelivr.net/gh/voidking/voidking.github.io/search.xml
+    url: //cdn.voidking.com/search.xml
 
 # Swiftype Search API Key
 swiftype_key:
@@ -997,8 +998,8 @@ vendors:
   # Gitalk
   # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
   # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
-  gitalk_js:
-  gitalk_css:
+  gitalk_js: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/gitalk/1.7.2/gitalk.min.js
+  gitalk_css: https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/gitalk/1.7.2/gitalk.min.css
 
   # Algolia Search
   # algolia_instant_js: //cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js
