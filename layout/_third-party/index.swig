@@ -14,4 +14,3 @@
 {% include 'chat/tidio.swig' %}
 
 {% include 'tags/pdf.swig' %}
-{% include 'tags/mermaid.swig' %}
