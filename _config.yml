@@ -321,7 +321,7 @@ tagcloud:
   max: 30 # Maxium font size in px
   start: "#ccc" # Start color (hex, rgba, hsla or color keywords)
   end: "#111" # End color (hex, rgba, hsla or color keywords)
-  amount: 200 # Amount of tags, change it if you have more than 200 tags
+  amount: 2000 # Amount of tags, change it if you have more than 200 tags
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.
