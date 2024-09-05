@@ -786,7 +786,7 @@ local_search:
     # url: //cdn.statically.io/gh/voidking/voidking.github.io/master/search.xml
     # url: //rawcdn.githack.com/voidking/voidking.github.io/master/search.xml
     # url: //cdn.voidking.com/search.xml
-    url: //qiniu.cdn.voidking.com/doc/search.xml
+    url: //qiniu-cdn.voidking.com/doc/search.xml
     
     
 # Swiftype Search API Key
