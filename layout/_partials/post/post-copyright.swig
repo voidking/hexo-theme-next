@@ -15,9 +15,9 @@
     <strong>{{ __('post.copyright.license_title') + __('symbol.colon') }} </strong>
     {{- __('post.copyright.license_content', next_url(ccURL, ccIcon + ccText)) }}
   </li>
-  <li>
+<!--   <li>
     <img width="200" height="200" src="/images/avatar.jpg">
     <p style="text-align: center; margin-bottom: 0;">微信公众号同步更新，欢迎关注~</p>
-  </li>
+  </li> -->
 </ul>
 </div>
