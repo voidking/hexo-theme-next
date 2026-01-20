@@ -1076,7 +1076,7 @@ baidu_union:
   wap_footer_container_class: "_ft8kcphe7kl"
 
 google_adsense:
-  enable: true
+  enable: false
   client: "ca-pub-3284447971731414"
   footer_enable: true
   footer_ad_slot: "9697986181"
